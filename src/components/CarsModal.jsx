@@ -53,19 +53,19 @@ const CarsModal = ({ handleClose, show, brand, handleAddNewClient,handleCloseCan
             onChange={(e) => setClient(e.target.value)} 
             required
           />
-          <Form.Label htmlFor="name">Your Offer</Form.Label>
+          <Form.Label htmlFor="offer">Your Offer</Form.Label>
           <Form.Control
             type="number" 
             min="0"
-            id="name"
+            id="offer"
             onChange={(e) => setOffer(e.target.value)} 
             required
           />
-          <Form.Label htmlFor="name">Your Offer</Form.Label>
+          <Form.Label htmlFor="date">Your Offer Date</Form.Label>
           <Form.Control
             type="date" 
             min="0"
-            id="name"
+            id="date"
             onChange={(e) => setOfferDate(e.target.value)} 
             required
           />
