@@ -1,24 +1,26 @@
 import { Container } from "react-bootstrap";
 import Cars from "../components/Cars";
-import { cars, offers } from "../helpers/data";
+import { cars } from "../helpers/data";
 import CarsOffer from "../components/CarsOffer";
 import { useState } from "react";
 
 const Home = () => {
-  const [carSale, setCarSale] = useState(offers)
+  const getLocal = JSON.parse(localStorage.getItem("myDeneme")) || []
+  const [carSale, setCarSale] = useState(getLocal)
 
   const handleAddNewClient = (newClient) => {
         setCarSale([...carSale,newClient])
-        // saveLocalStorage(carSale)
+        saveLocalStorage([...carSale,newClient])
   }
 
-  // const saveLocalStorage = () => {
-  //   localStorage.setItem("myDeneme", JSON.stringify(carSale))
-  // }
+  const saveLocalStorage = (data) => {
+    localStorage.setItem("myDeneme", JSON.stringify(data))
+  }
   
   const handleDelete = (id) => {
       const filteredList = carSale.filter((car) => car.id !== id)
       setCarSale(filteredList)
+      saveLocalStorage(filteredList)
   }
 
   const handleDoubleClick = (id) => {
@@ -27,6 +29,7 @@ const Home = () => {
       )
       
       setCarSale(updatedList)
+      saveLocalStorage(updatedList)
   }
 
   return (
