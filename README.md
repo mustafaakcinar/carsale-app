@@ -31,6 +31,6 @@ Build a Car Gallery Offer App using ReactJS.
 [Appointment App Live]()
 
 ## About me
-You can access my GitHub from here: [GitHub Profile](https://github.com/mustafaakcinar)
-[Linkedin Profile](https://www.linkedin.com/in/mustafaakcinar/)
-You can contact with me from here: mustafaakcinarr@gmail.com
+- You can access my GitHub from here: [GitHub Profile](https://github.com/mustafaakcinar)
+- [Linkedin Profile](https://www.linkedin.com/in/mustafaakcinar/)
+- You can contact with me from here: mustafaakcinarr@gmail.com
