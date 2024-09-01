@@ -26,7 +26,7 @@ Build a Car Gallery Offer App using ReactJS.
 - Step 3: Run the project
 -yarn start
 
-## Demo
+## Live Project
 
 [Appointment App Live]()
 
