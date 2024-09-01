@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(../public/img/replicas-810316_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+
+
+.cars-img{
+    width: 275px;
+    height: 220px;
+    border-radius: 1rem;
+    transition: transform .7s
+}
+
+.cars-img:hover{
+    border: 2px solid red;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.app-list{
+    border: 2px solid rgba(0, 0, 255, 0.712);
+    border-radius: 10px;
+    padding: 1rem 0;
+    background-color: #A3B2B8;
+    transition: transform .7s;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.app-list:hover{
+    transform: scale(1.1);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.bg-offcanvas{
+    background-color: rgb(212, 212, 235) !important;
+}
+
+.bg-offcanvas img{
+    border-radius: 1rem;
+}
+.card-div-head h2{
+    color: white;
+}
+
+.card-div{
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+}
+
+.soldOut{
+    opacity: .7;
+}
+
+.soldOut::after{
+    content: "SOLD OUT";
+    color: red;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transform: rotate(-10deg) translate(-50%,-50%);
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    border: 5px solid red;
+    backdrop-filter: blur(5px);
+}
+
+.homepage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list img{
+    opacity: .8;
+    border-radius: 10px;
+}
